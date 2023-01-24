@@ -53,15 +53,15 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="249" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="2" attributes="0">
-                          <Component id="jRadioButton1" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
-                          <Component id="jRadioButton2" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
-                          <Component id="jRadioButton3" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
-                          <Component id="jButton1" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="filmesRadio" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="novelasRadio" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="carrosRadio" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
+                          <Component id="jogarBotao" alignment="2" min="-2" pref="105" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="271" max="32767" attributes="0"/>
+                      <EmptySpace pref="268" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -69,20 +69,20 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
-                      <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="filmesRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="novelasRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="121" max="32767" attributes="0"/>
+                      <Component id="carrosRadio" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jogarBotao" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="118" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+            <Component class="javax.swing.JRadioButton" name="filmesRadio">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup1"/>
@@ -91,7 +91,7 @@
                 <Property name="alignmentY" type="float" value="0.0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+            <Component class="javax.swing.JRadioButton" name="novelasRadio">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup1"/>
@@ -99,7 +99,7 @@
                 <Property name="text" type="java.lang.String" value="Novelas"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+            <Component class="javax.swing.JRadioButton" name="carrosRadio">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="buttonGroup1"/>
@@ -107,10 +107,13 @@
                 <Property name="text" type="java.lang.String" value="Carros"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="jogarBotao">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Jogar"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jogarBotaoActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
