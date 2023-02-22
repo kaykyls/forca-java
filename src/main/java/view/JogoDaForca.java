@@ -1,11 +1,12 @@
 package view;
-
-import java.util.*;
+import java.util.ArrayList;
 
 public class JogoDaForca extends javax.swing.JFrame {
+
     public JogoDaForca() {
         initComponents();
         this.jTabbedPane1.setEnabledAt(1, false);
+        jogarNovamenteButton.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -26,7 +27,8 @@ public class JogoDaForca extends javax.swing.JFrame {
         letrasSorteadasLabel = new javax.swing.JLabel();
         letrasLabel = new javax.swing.JLabel();
         palavraLabel = new javax.swing.JLabel();
-        temaText = new javax.swing.JLabel();
+        temaLabel = new javax.swing.JLabel();
+        jogarNovamenteButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,8 +64,8 @@ public class JogoDaForca extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(203, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(214, Short.MAX_VALUE)
                 .addComponent(filmesRadio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(novelasRadio)
@@ -92,8 +94,16 @@ public class JogoDaForca extends javax.swing.JFrame {
         palavraLabel.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         palavraLabel.setText("_ _ _ _ _ _ _ _ _ _ _ _ _");
 
-        temaText.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        temaText.setText("Tema: tema");
+        temaLabel.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        temaLabel.setText("Tema: tema");
+
+        jogarNovamenteButton.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        jogarNovamenteButton.setText("Jogar novamente");
+        jogarNovamenteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jogarNovamenteButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -103,8 +113,8 @@ public class JogoDaForca extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(palavraLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(temaText, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 351, Short.MAX_VALUE)
+                    .addComponent(temaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(chutarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -113,6 +123,10 @@ public class JogoDaForca extends javax.swing.JFrame {
                         .addComponent(informacaoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(letrasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(75, 75, 75))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(343, Short.MAX_VALUE)
+                .addComponent(jogarNovamenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(339, 339, 339))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -120,20 +134,20 @@ public class JogoDaForca extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(letrasSorteadasLabel)
-                    .addComponent(temaText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(temaLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(letrasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
+                .addComponent(jogarNovamenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(letrasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 204, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(informacaoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(letraTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(52, 52, 52)
                         .addComponent(chutarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(palavraLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(palavraLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44))
         );
 
@@ -153,33 +167,50 @@ public class JogoDaForca extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     public void setTema(String tema) {
-        temaText.setText("Tema: " + tema);
+        temaLabel.setText("Tema: " + tema);
     }
     
-    String palavra = "";
+    public void resetGame() {
+        palavraSecreta = "";
+        palavraSecretaTexto = "";
+
+        palavraArray = new char[0];
+        palavraSecretaArray = new char[0];
+        
+        chutes = new ArrayList<Character>();
+        
+        jogarNovamenteButton.setVisible(false);
+        
+        informacaoLabel.setText("Insira a letra:");
+        letrasLabel.setText("");
+
+        this.jTabbedPane1.setSelectedIndex(0);
+    }
+
+//    String palavra = "";
     String palavraSecreta = "";
     String palavraSecretaTexto = "";
-    
+
     char[] palavraArray;
     char[] palavraSecretaArray;
-    
-    ArrayList <Character> chutes = new ArrayList<Character>();
-    
-    
-    int erros = 0;
-    
-    private void jogarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jogarBotaoActionPerformed
 
-        if(this.carrosRadio.isSelected() || this.novelasRadio.isSelected() || this.filmesRadio.isSelected()) {
+    ArrayList<Character> chutes = new ArrayList<Character>();
+
+    int erros = 0;
+
+    private void jogarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jogarBotaoActionPerformed
+        resetGame();
+        if (this.carrosRadio.isSelected() || this.novelasRadio.isSelected() || this.filmesRadio.isSelected()) {
             Palavras palavras = new Palavras();
-            
+
             this.jTabbedPane1.setSelectedIndex(1);
             this.jTabbedPane1.setEnabledAt(1, true);
-            
-            if(carrosRadio.isSelected()) {    
-                palavra = palavras.sortear(1);
-                
-                for(int i = 0; i < palavra.length(); i++) {
+
+            if (carrosRadio.isSelected()) {
+                //TODO: delertar variavel palavra e colocar .toCharArray no final de .sortear(), a variavel será palavraArray
+                palavraArray = palavras.sortear(1).toCharArray();
+
+                for (int i = 0; i < palavraArray.length; i++) {
                     palavraSecreta += "_";
                     palavraSecretaTexto += "_ ";
                 }
@@ -187,28 +218,28 @@ public class JogoDaForca extends javax.swing.JFrame {
                 palavraLabel.setText(palavraSecretaTexto);
                 setTema("Carros");
             } else if (novelasRadio.isSelected()) {
-                palavra = palavras.sortear(2);
-                
-                for(int i = 0; i < palavra.length(); i++) {
+                palavraArray = palavras.sortear(2).toCharArray();
+
+                for (int i = 0; i < palavraArray.length; i++) {
                     palavraSecreta += "_";
                     palavraSecretaTexto += "_ ";
                 }
-                
+
                 palavraLabel.setText(palavraSecretaTexto);
                 setTema("Novelas");
-            } else if(filmesRadio.isSelected()) {
-                palavra = palavras.sortear(3);
-                
-                for(int i = 0; i < palavra.length(); i++) {
+            } else if (filmesRadio.isSelected()) {
+                palavraArray = palavras.sortear(3).toCharArray();
+
+                for (int i = 0; i < palavraArray.length; i++) {
                     palavraSecreta += "_";
                     palavraSecretaTexto += "_ ";
                 }
-                
+
                 palavraLabel.setText(palavraSecretaTexto);
                 setTema("Filmes");
             }
-            
-            palavraArray = palavra.toCharArray();
+
+//            palavraArray = palavra.toCharArray();
             palavraSecretaArray = palavraSecreta.toCharArray();
         }
     }//GEN-LAST:event_jogarBotaoActionPerformed
@@ -216,71 +247,75 @@ public class JogoDaForca extends javax.swing.JFrame {
     private void chutarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chutarBotaoActionPerformed
         boolean acertou = false;
         boolean ganhou = false;
-        
-        if(erros < 6) {
-            if(letraTextField.getText().length() == 1) {
-                char tentativa = letraTextField.getText().charAt(0);
-                
-                if (!chutes.contains(tentativa)) {
-                    chutes.add(tentativa);
+        char tentativa = letraTextField.getText().toLowerCase().charAt(0);
 
-                    String letrasTexto = "";
-                    for(int i = 0; i < chutes.size(); i++) {
-                        letrasTexto += chutes.get(i) + ",";
-                    }
-
-                    letrasLabel.setText(letrasTexto);
-
-                    for(int i = 0; i < palavra.length(); i++) {
-                        if(tentativa == palavraArray[i]) {
-                            palavraSecretaArray[i] = tentativa;
-                            acertou = true;
-                        }
-                    }
-
-                    if(!acertou) {
-                        erros++;
-                    }
-
-                    palavraSecretaTexto = "";
-                    for(int i = 0; i < palavra.length(); i++) {
-                        palavraSecretaTexto += palavraSecretaArray[i] + " ";
-                    }
-
-                    palavraLabel.setText(palavraSecretaTexto);
-
-                    int quantLetrasAcertadas = 0;
-                    for(int i = 0; i < palavra.length(); i++) {
-                        if(palavraSecretaArray[i] == palavraArray[i]){
-                            System.out.println("1: " + palavraSecretaArray[i] + "   2: " + palavraArray[i]);
-                            System.out.println("ENTROU IF 1");
-
-                            quantLetrasAcertadas++;
-                            if(quantLetrasAcertadas == palavra.length()) {
-                                System.out.println("ENTROU IF 2");
-                                ganhou = true;
-                            }
-                        }
-                    }
-                    
-                    informacaoLabel.setText("Insira a letra:");
-
-                    if(ganhou) {
-                        informacaoLabel.setText("Você ganhou!!!");
-                    }
-                } else {
-                    informacaoLabel.setText("Essa letra já foi!");
-                }
-                
-
-            } else {
-                informacaoLabel.setText("Insira apenas uma letra!");
-            }
-        } else {
+        if (!(erros < 5)) {
             informacaoLabel.setText("Você perdeu!!!");
+            jogarNovamenteButton.setVisible(true);
+            return;
         }
+
+        if (!(letraTextField.getText().length() == 1)) {
+            informacaoLabel.setText("Insira apenas uma letra!");
+            return;
+        }
+
+        if (chutes.contains(tentativa)) {
+            informacaoLabel.setText("Essa letra já foi!");
+            return;
+        }
+
+        chutes.add(tentativa);
+
+        String letrasTexto = "";
+        for (int i = 0; i < chutes.size(); i++) {
+            letrasTexto += chutes.get(i) + ",";
+        }
+
+        letrasLabel.setText(letrasTexto);
+
+        for (int i = 0; i < palavraArray.length; i++) {
+            if (tentativa == palavraArray[i]) {
+                palavraSecretaArray[i] = tentativa;
+                acertou = true;
+            }
+        }
+
+        if (!acertou) {
+            erros++;
+        }
+
+        palavraSecretaTexto = "";
+        for (int i = 0; i < palavraArray.length; i++) {
+            palavraSecretaTexto += palavraSecretaArray[i] + " ";
+        }
+
+        palavraLabel.setText(palavraSecretaTexto);
+
+        int quantLetrasAcertadas = 0;
+        for (int i = 0; i < palavraArray.length; i++) {
+            if (palavraSecretaArray[i] == palavraArray[i]) {
+                quantLetrasAcertadas++;
+                if (quantLetrasAcertadas == palavraArray.length) {
+                    ganhou = true;
+                }
+            }
+        }
+
+        informacaoLabel.setText("Insira a letra:");
+
+        if (ganhou) {
+            informacaoLabel.setText("Você ganhou!!!");
+            jogarNovamenteButton.setVisible(true);
+        }
+        
+        letraTextField.setText("");
     }//GEN-LAST:event_chutarBotaoActionPerformed
 
+    private void jogarNovamenteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jogarNovamenteButtonActionPerformed
+        // TODO add your handling code here:
+        resetGame();
+    }//GEN-LAST:event_jogarNovamenteButtonActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -299,7 +334,7 @@ public class JogoDaForca extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(JogoDaForca.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new JogoDaForca().setVisible(true);
@@ -317,11 +352,12 @@ public class JogoDaForca extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JButton jogarBotao;
+    private javax.swing.JButton jogarNovamenteButton;
     private javax.swing.JTextField letraTextField;
     private javax.swing.JLabel letrasLabel;
     private javax.swing.JLabel letrasSorteadasLabel;
     private javax.swing.JRadioButton novelasRadio;
     private javax.swing.JLabel palavraLabel;
-    private javax.swing.JLabel temaText;
+    private javax.swing.JLabel temaLabel;
     // End of variables declaration//GEN-END:variables
 }

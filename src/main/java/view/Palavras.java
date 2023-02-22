@@ -1,9 +1,9 @@
 package view;
 
 public class Palavras {
-    String[] carros = new String[] {"Celta", "Fusca", "Elantra", "Hylux", "Impala"};
-    String[] novelas = new String[] {"Senhora", "Gabriela", "Pantanal", "Chiquititas", "Carrossel"};
-    String[] filmes = new String[] {"Fragmentado", "Vidro", "Shrek", "Interestelar", "Nárnia"};
+    String[] carros = new String[] {"celta", "fusca", "elantra", "hylux", "impala"};
+    String[] novelas = new String[] {"senhora", "gabriela", "pantanal", "chiquititas", "carrossel"};
+    String[] filmes = new String[] {"fragmentado", "vidro", "shrek", "interestelar", "narnia"};
     
     public String sortear(int id) {
         int random = (int) (Math.random() * 5);

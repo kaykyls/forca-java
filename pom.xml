@@ -11,4 +11,5 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>com.mycompany.jogo.da.forca.JogoDaForca</exec.mainClass>
     </properties>
+    <name>jogo-da-forca</name>
 </project>
