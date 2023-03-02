@@ -7,6 +7,15 @@ public class JogoDaForca extends javax.swing.JFrame {
         initComponents();
         this.jTabbedPane1.setEnabledAt(1, false);
         jogarNovamenteButton.setVisible(false);
+        
+        
+        cabecaImg.setVisible(false);
+        corpoImg.setVisible(false);
+        bracoEsqImg.setVisible(false);
+        bracoDirImg.setVisible(false);
+        pernaEsqImg.setVisible(false);
+        pernaDirImg.setVisible(false);
+
     }
 
     @SuppressWarnings("unchecked")
@@ -29,6 +38,13 @@ public class JogoDaForca extends javax.swing.JFrame {
         palavraLabel = new javax.swing.JLabel();
         temaLabel = new javax.swing.JLabel();
         jogarNovamenteButton = new javax.swing.JButton();
+        cordaImg = new javax.swing.JLabel();
+        cabecaImg = new javax.swing.JLabel();
+        bracoEsqImg = new javax.swing.JLabel();
+        pernaEsqImg = new javax.swing.JLabel();
+        bracoDirImg = new javax.swing.JLabel();
+        pernaDirImg = new javax.swing.JLabel();
+        corpoImg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,27 +69,27 @@ public class JogoDaForca extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(397, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(442, 442, 442)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(filmesRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(novelasRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(carrosRadio, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jogarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(390, 390, 390))
+                .addContainerGap(443, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(214, Short.MAX_VALUE)
+                .addGap(266, 266, 266)
                 .addComponent(filmesRadio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(novelasRadio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(carrosRadio)
-                .addGap(12, 12, 12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jogarBotao)
-                .addGap(192, 192, 192))
+                .addContainerGap(318, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Início", jPanel1);
@@ -105,28 +121,79 @@ public class JogoDaForca extends javax.swing.JFrame {
             }
         });
 
+        cordaImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/corda (3).png"))); // NOI18N
+
+        cabecaImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/cabeca (1).png"))); // NOI18N
+
+        bracoEsqImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/braco-perna-esq.png"))); // NOI18N
+
+        pernaEsqImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/braco-perna-esq.png"))); // NOI18N
+
+        bracoDirImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/braco-perna-dir.png"))); // NOI18N
+
+        pernaDirImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/braco-perna-dir.png"))); // NOI18N
+
+        corpoImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/corpo (2).png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(palavraLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(temaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(temaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(cordaImg, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(chutarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(letrasSorteadasLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(letraTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(informacaoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(letrasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(75, 75, 75))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(343, Short.MAX_VALUE)
-                .addComponent(jogarNovamenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(339, 339, 339))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(letrasSorteadasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(letrasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(80, 80, 80))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                                .addComponent(pernaEsqImg)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(pernaDirImg))
+                                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                                .addComponent(bracoEsqImg)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(bracoDirImg))
+                                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                                .addGap(68, 68, 68)
+                                                .addComponent(corpoImg))
+                                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                                .addGap(67, 67, 67)
+                                                .addComponent(jogarNovamenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(0, 370, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(informacaoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addComponent(cabecaImg)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(chutarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(letraTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(61, 61, 61)))
+                        .addContainerGap())))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(137, 137, 137)
+                .addComponent(palavraLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,19 +202,34 @@ public class JogoDaForca extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(letrasSorteadasLabel)
                     .addComponent(temaLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(letrasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
-                .addComponent(jogarNovamenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(informacaoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(letraTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(52, 52, 52)
-                        .addComponent(chutarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(palavraLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(cordaImg))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(letrasLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(75, 75, 75)
+                        .addComponent(cabecaImg, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(corpoImg)
+                            .addComponent(bracoDirImg)
+                            .addComponent(bracoEsqImg))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pernaEsqImg)
+                            .addComponent(pernaDirImg))
+                        .addGap(51, 51, 51)
+                        .addComponent(jogarNovamenteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(informacaoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(letraTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(palavraLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(chutarBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44))
         );
 
@@ -161,13 +243,60 @@ public class JogoDaForca extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    String[] carros = new String[] {"celta", "fusca", "elantra", "hylux", "impala"};
+    String[] novelas = new String[] {"senhora", "gabriela", "pantanal", "chiquititas", "carrossel"};
+    String[] filmes = new String[] {"fragmentado", "vidro", "shrek", "interestelar", "narnia"};
+    
+    public String sortear(int id) {
+        int random = (int) (Math.random() * 5);
+
+        String palavraAleatoria = "";
+
+        switch (id) {
+            case 1:
+                palavraAleatoria = carros[random];
+                break;
+            case 2:
+                palavraAleatoria = novelas[random];
+                break;
+            case 3:
+                palavraAleatoria = filmes[random];
+                break;
+        }
+        
+        return palavraAleatoria;
+    }
+    
     public void setTema(String tema) {
         temaLabel.setText("Tema: " + tema);
+    }
+    
+    public void definirPalavra(int id) {
+        palavraArray = sortear(id).toCharArray();
+
+        for(int i = 0; i < palavraArray.length; i++) {
+           palavraSecreta += "_";
+           palavraSecretaTexto += "_ ";
+        }
+
+        palavraLabel.setText(palavraSecretaTexto);
+                
+        switch(id){
+            case 1:
+                setTema("Carros");
+                break;
+            case 2:
+                setTema("Novelas");
+                break;
+            case 3:
+                setTema("Filmes");
+                break;
+        }
     }
     
     public void resetGame() {
@@ -185,9 +314,18 @@ public class JogoDaForca extends javax.swing.JFrame {
         letrasLabel.setText("");
 
         this.jTabbedPane1.setSelectedIndex(0);
+        erros = 0;
+        
+        this.jTabbedPane1.setEnabledAt(1, false);
+        
+        cabecaImg.setVisible(false);
+        corpoImg.setVisible(false);
+        bracoEsqImg.setVisible(false);
+        bracoDirImg.setVisible(false);
+        pernaEsqImg.setVisible(false);
+        pernaDirImg.setVisible(false);
     }
 
-//    String palavra = "";
     String palavraSecreta = "";
     String palavraSecretaTexto = "";
 
@@ -201,45 +339,18 @@ public class JogoDaForca extends javax.swing.JFrame {
     private void jogarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jogarBotaoActionPerformed
         resetGame();
         if (this.carrosRadio.isSelected() || this.novelasRadio.isSelected() || this.filmesRadio.isSelected()) {
-            Palavras palavras = new Palavras();
 
             this.jTabbedPane1.setSelectedIndex(1);
             this.jTabbedPane1.setEnabledAt(1, true);
 
             if (carrosRadio.isSelected()) {
-                //TODO: delertar variavel palavra e colocar .toCharArray no final de .sortear(), a variavel será palavraArray
-                palavraArray = palavras.sortear(1).toCharArray();
-
-                for (int i = 0; i < palavraArray.length; i++) {
-                    palavraSecreta += "_";
-                    palavraSecretaTexto += "_ ";
-                }
-
-                palavraLabel.setText(palavraSecretaTexto);
-                setTema("Carros");
+                definirPalavra(1);
             } else if (novelasRadio.isSelected()) {
-                palavraArray = palavras.sortear(2).toCharArray();
-
-                for (int i = 0; i < palavraArray.length; i++) {
-                    palavraSecreta += "_";
-                    palavraSecretaTexto += "_ ";
-                }
-
-                palavraLabel.setText(palavraSecretaTexto);
-                setTema("Novelas");
+                definirPalavra(2);
             } else if (filmesRadio.isSelected()) {
-                palavraArray = palavras.sortear(3).toCharArray();
-
-                for (int i = 0; i < palavraArray.length; i++) {
-                    palavraSecreta += "_";
-                    palavraSecretaTexto += "_ ";
-                }
-
-                palavraLabel.setText(palavraSecretaTexto);
-                setTema("Filmes");
+                definirPalavra(3);
             }
 
-//            palavraArray = palavra.toCharArray();
             palavraSecretaArray = palavraSecreta.toCharArray();
         }
     }//GEN-LAST:event_jogarBotaoActionPerformed
@@ -247,18 +358,36 @@ public class JogoDaForca extends javax.swing.JFrame {
     private void chutarBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chutarBotaoActionPerformed
         boolean acertou = false;
         boolean ganhou = false;
-        char tentativa = letraTextField.getText().toLowerCase().charAt(0);
+        
+        char[] letrasArray = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+        ArrayList<Character> letras = new ArrayList<Character>();
 
-        if (!(erros < 5)) {
+        for(char letra : letrasArray){
+            letras.add(letra);
+        }
+        
+        if (erros == 6) {
             informacaoLabel.setText("Você perdeu!!!");
             jogarNovamenteButton.setVisible(true);
             return;
         }
 
-        if (!(letraTextField.getText().length() == 1)) {
+        if (letraTextField.getText().length() > 1) {
             informacaoLabel.setText("Insira apenas uma letra!");
             return;
         }
+        
+        if (letraTextField.getText().length() == 0) {
+            informacaoLabel.setText("Insira uma letra!");
+            return;
+        }
+
+        if (!(letras.contains(letraTextField.getText().charAt(0)))) {
+            informacaoLabel.setText("Insira apenas letras (A - Z)!");
+            return;
+        }
+        
+        char tentativa = letraTextField.getText().toLowerCase().charAt(0);
 
         if (chutes.contains(tentativa)) {
             informacaoLabel.setText("Essa letra já foi!");
@@ -283,6 +412,34 @@ public class JogoDaForca extends javax.swing.JFrame {
 
         if (!acertou) {
             erros++;
+        }
+        
+        switch (erros) {
+            case 1:
+                cabecaImg.setVisible(true);
+                break;
+            case 2:
+                corpoImg.setVisible(true);
+                break;
+            case 3:
+                bracoEsqImg.setVisible(true);
+                break;
+            case 4:
+                bracoDirImg.setVisible(true);
+                break;
+            case 5:
+                pernaEsqImg.setVisible(true);
+                break;
+            case 6:
+                pernaDirImg.setVisible(true);
+                break;    
+        }
+        
+        if (erros == 6) {
+            informacaoLabel.setText("Você perdeu!!!");
+            jogarNovamenteButton.setVisible(true);
+            letraTextField.setText("");
+            return;
         }
 
         palavraSecretaTexto = "";
@@ -343,9 +500,14 @@ public class JogoDaForca extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel bracoDirImg;
+    private javax.swing.JLabel bracoEsqImg;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel cabecaImg;
     private javax.swing.JRadioButton carrosRadio;
     private javax.swing.JButton chutarBotao;
+    private javax.swing.JLabel cordaImg;
+    private javax.swing.JLabel corpoImg;
     private javax.swing.JRadioButton filmesRadio;
     private javax.swing.JLabel informacaoLabel;
     private javax.swing.JPanel jPanel1;
@@ -358,6 +520,8 @@ public class JogoDaForca extends javax.swing.JFrame {
     private javax.swing.JLabel letrasSorteadasLabel;
     private javax.swing.JRadioButton novelasRadio;
     private javax.swing.JLabel palavraLabel;
+    private javax.swing.JLabel pernaDirImg;
+    private javax.swing.JLabel pernaEsqImg;
     private javax.swing.JLabel temaLabel;
     // End of variables declaration//GEN-END:variables
 }

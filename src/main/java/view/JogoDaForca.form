@@ -53,30 +53,30 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="397" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="442" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="2" attributes="0">
                           <Component id="filmesRadio" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
                           <Component id="novelasRadio" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
                           <Component id="carrosRadio" alignment="2" min="-2" pref="102" max="-2" attributes="0"/>
                           <Component id="jogarBotao" alignment="2" min="-2" pref="105" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="390" max="-2" attributes="0"/>
+                      <EmptySpace pref="443" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace pref="214" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="266" max="-2" attributes="0"/>
                       <Component id="filmesRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="novelasRadio" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="carrosRadio" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jogarBotao" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="192" max="-2" attributes="0"/>
+                      <EmptySpace pref="318" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -129,28 +129,82 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="palavraLabel" min="-2" pref="193" max="-2" attributes="0"/>
-                          <Component id="temaLabel" min="-2" pref="234" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="chutarBotao" min="-2" pref="198" max="-2" attributes="0"/>
-                              <Component id="letrasSorteadasLabel" alignment="0" min="-2" pref="193" max="-2" attributes="0"/>
-                              <Component id="letraTextField" alignment="1" min="-2" pref="198" max="-2" attributes="0"/>
-                              <Component id="informacaoLabel" alignment="1" min="-2" pref="198" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Component id="temaLabel" min="-2" pref="234" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="letrasLabel" alignment="0" min="-2" pref="193" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cordaImg" min="-2" pref="149" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="letrasSorteadasLabel" alignment="0" min="-2" pref="193" max="-2" attributes="0"/>
+                                  <Component id="letrasLabel" alignment="0" min="-2" pref="193" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="pernaEsqImg" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="pernaDirImg" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="bracoEsqImg" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="bracoDirImg" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                                                      <Component id="corpoImg" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                                                      <Component id="jogarNovamenteButton" min="-2" pref="273" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace min="0" pref="370" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="informacaoLabel" min="-2" pref="259" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Component id="cabecaImg" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="chutarBotao" min="-2" pref="198" max="-2" attributes="0"/>
+                                          <Component id="letraTextField" min="-2" pref="198" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="343" max="32767" attributes="0"/>
-                      <Component id="jogarNovamenteButton" min="-2" pref="210" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="339" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                      <Component id="palavraLabel" min="-2" pref="193" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -162,20 +216,39 @@
                           <Component id="letrasSorteadasLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="temaLabel" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="letrasLabel" min="-2" pref="50" max="-2" attributes="0"/>
-                      <EmptySpace pref="115" max="32767" attributes="0"/>
-                      <Component id="jogarNovamenteButton" min="-2" pref="49" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="informacaoLabel" min="-2" pref="40" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="letraTextField" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                              <Component id="chutarBotao" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="cordaImg" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="palavraLabel" alignment="1" min="-2" pref="37" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="letrasLabel" min="-2" pref="50" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                              <Component id="cabecaImg" min="-2" pref="70" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="corpoImg" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bracoDirImg" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bracoEsqImg" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="pernaEsqImg" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pernaDirImg" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                              <Component id="jogarNovamenteButton" min="-2" pref="49" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="informacaoLabel" min="-2" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="letraTextField" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="18" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="palavraLabel" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                          <Component id="chutarBotao" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   </Group>
@@ -237,6 +310,55 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jogarNovamenteButtonActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="cordaImg">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/corda (3).png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="cabecaImg">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/cabeca (1).png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="bracoEsqImg">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/braco-perna-esq.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pernaEsqImg">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/braco-perna-esq.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="bracoDirImg">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/braco-perna-dir.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="pernaDirImg">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/braco-perna-dir.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="corpoImg">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/view/corpo (2).png"/>
+                </Property>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
