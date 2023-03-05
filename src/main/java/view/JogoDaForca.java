@@ -49,15 +49,19 @@ public class JogoDaForca extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         buttonGroup1.add(filmesRadio);
+        filmesRadio.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         filmesRadio.setText("Filmes");
         filmesRadio.setAlignmentY(0.0F);
 
         buttonGroup1.add(novelasRadio);
+        novelasRadio.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         novelasRadio.setText("Novelas");
 
         buttonGroup1.add(carrosRadio);
+        carrosRadio.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         carrosRadio.setText("Carros");
 
+        jogarBotao.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jogarBotao.setText("Jogar");
         jogarBotao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +93,7 @@ public class JogoDaForca extends javax.swing.JFrame {
                 .addComponent(carrosRadio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jogarBotao)
-                .addContainerGap(318, Short.MAX_VALUE))
+                .addContainerGap(298, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Início", jPanel1);
@@ -243,7 +247,7 @@ public class JogoDaForca extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
 
         pack();
