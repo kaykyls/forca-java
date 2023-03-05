@@ -1,4 +1,4 @@
-<h1>Jogo da forca</h1>
+<h1>Jogo da Forca</h1>
 
 <img src="https://cdn.discordapp.com/attachments/766798638139179031/1082023133160157284/forcaGif.gif"/>
 
